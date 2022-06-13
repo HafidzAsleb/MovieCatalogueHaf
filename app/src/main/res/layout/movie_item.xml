@@ -39,15 +39,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/movie_original_language"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:maxLines="2"
+        android:text="@string/app_name"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/movie_poster"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
         android:id="@+id/movie_release_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="8dp"
         android:text="Release Date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/movie_poster"
         app:layout_constraintTop_toBottomOf="@+id/movie_title"
         app:layout_constraintVertical_bias="0.864" />
+
+    <TextView
+        android:id="@+id/movie_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="keterangan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movie_poster"
+        app:layout_constraintTop_toBottomOf="@+id/movie_title"
+        app:layout_constraintVertical_bias="0.305" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
